@@ -216,6 +216,8 @@ const prizeDisplay = document.getElementById("prize");
 const statusDisplay = document.getElementById("status");
 const skipBtn = document.getElementById("skip-btn");
 const hintBtn = document.getElementById("hint-btn");
+let timeLeft = 15;
+let countdown;
 
 function shuffleArray(array) {
   for (let i = array.length - 1; i > 0; i--) {
@@ -225,6 +227,22 @@ function shuffleArray(array) {
 }
 
 function loadQuestion() {
+  clearInterval(countdown); // limpar qualquer timer anterior
+  timeLeft = 8;
+  document.getElementById("timer").textContent = `Tempo restante: ${timeLeft}s`;
+  document.getElementById("timer").style.display = "block";
+  countdown = setInterval(() => {
+    timeLeft--;
+    document.getElementById("timer").textContent = `Tempo restante: ${timeLeft}s`;
+    if (timeLeft <= 0) {
+      clearInterval(countdown);
+      statusDisplay.innerHTML =
+        "Tempo esgotado! Você perdeu o jogo.<br>Tente outra vez!";
+      optionsDiv.innerHTML = "";
+      document.querySelector(".buttons").style.display = "none";
+      resetBtn.style.display = "inline-block";
+    }
+  }, 1000);
   optionsDiv.style.display = "block";
   buttons.style.display = "block";
   prizeDisplay.style.display = "block";
@@ -260,6 +278,7 @@ function loadQuestion() {
 }
 
 function checkAnswer(index, btn) {
+  clearInterval(countdown);
   const q = questions[currentQuestion % questions.length];
   const optionButtons = document.querySelectorAll(".option");
 
@@ -347,7 +366,7 @@ resetBtn.onclick = () => {
 window.onload = () => {
   const startBtn = document.getElementsByClassName("start-btn")[0];
   const now = new Date();
-  const targetDate = new Date(2025, 5, 12, 0, 0, 0);
+  const targetDate = new Date(2025, 5, 8, 0, 0, 0);
   const countdownDiv = document.getElementById("countdown");
 
   if (now >= targetDate) {
