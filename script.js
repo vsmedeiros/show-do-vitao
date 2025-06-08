@@ -229,6 +229,18 @@ function shuffleArray(array) {
 function loadQuestion() {
   clearInterval(countdown); // limpar qualquer timer anterior
   timeLeft = 8;
+  
+  if (currentQuestion >= 21) {
+    questionText.innerHTML =
+      "Parabéns! Você ganhou R$ " +
+      maxPrize +
+      "!" +
+      "<br> Entre em contato com o seu admirador <br> secreto para um passeio no shopping e <br> gastar  seu prêmio!";
+    optionsDiv.innerHTML = "";
+    resetBtn.style.display = "inline-block";
+    document.querySelector(".buttons").style.display = "none";
+    return;
+  }
   document.getElementById("timer").textContent = `Tempo restante: ${timeLeft}s`;
   document.getElementById("timer").style.display = "block";
   countdown = setInterval(() => {
@@ -247,17 +259,6 @@ function loadQuestion() {
   buttons.style.display = "block";
   prizeDisplay.style.display = "block";
   questionNumber.style.display = "block";
-  if (currentQuestion >= 21) {
-    questionText.innerHTML =
-      "Parabéns! Você ganhou R$ " +
-      maxPrize +
-      "!" +
-      "<br> Entre em contato com o seu admirador <br> secreto para um passeio no shopping e <br> gastar  seu prêmio!";
-    optionsDiv.innerHTML = "";
-    resetBtn.style.display = "inline-block";
-    document.querySelector(".buttons").style.display = "none";
-    return;
-  }
   resetBtn.style.display = "none";
   const q = questions[currentQuestion % questions.length]; // repetir se faltarem
   questionNumber.textContent = `Pergunta ${currentQuestion} de 20`;
