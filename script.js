@@ -174,6 +174,76 @@ const questions = [
     options: ["Tubarão", "Jacaré", "Golfinho", "Galinha"],
     answer: 2,
   },
+   {
+    text: "Qual é a fórmula da energia em termos de massa e velocidade da luz?",
+    options: ["E = mc²", "F = ma", "V = IR", "P = W/t"],
+    answer: 0,
+  },
+  {
+    text: "Quem formulou as leis do movimento e da gravidade?",
+    options: [
+      "Albert Einstein",
+      "Isaac Newton",
+      "Galileu Galilei",
+      "Nikola Tesla"
+    ],
+    answer: 1,
+  },
+  {
+    text: "Qual é o elemento químico com número atômico 26?",
+    options: ["Ferro", "Cobre", "Ouro", "Prata"],
+    answer: 0,
+  },
+  {
+    text: "Qual foi a principal causa da Primeira Guerra Mundial?",
+    options: [
+      "Assassinato do Arquiduque Franz Ferdinand",
+      "Queda do Império Romano",
+      "Revolução Francesa",
+      "A crise do petróleo"
+    ],
+    answer: 0,
+  },
+  {
+    text: "Qual é a capital do Cazaquistão?",
+    options: ["Nur-Sultan", "Astana", "Almaty", "Bishkek"],
+    answer: 0,
+  },
+  {
+    text: "Qual é o nome do processo de divisão celular que resulta em quatro células-filhas haploides?",
+    options: ["Mitose", "Meiose", "Fissão binária", "Geminacao"],
+    answer: 1,
+  },
+  {
+    text: "Quem escreveu a obra 'O Príncipe', um tratado sobre política?",
+    options: [
+      "Maquiavel",
+      "Sócrates",
+      "Platão",
+      "Aristóteles"
+    ],
+    answer: 0,
+  },
+  {
+    text: "Em computação, o que significa a sigla 'HTTP'?",
+    options: [
+      "HyperText Transfer Protocol",
+      "HyperText Transmission Program",
+      "High Transfer Text Protocol",
+      "Hyper Terminal Transfer Process"
+    ],
+    answer: 0,
+  },
+  {
+    text: "Qual a velocidade da luz no vácuo, aproximadamente?",
+    options: [
+      "300.000 km/s",
+      "150.000 km/s",
+      "450.000 km/s",
+      "100.000 km/s"
+    ],
+    answer: 0,
+  },
 ];
 
 const audio = document.getElementById("bg-audio");
@@ -347,7 +417,7 @@ resetBtn.onclick = () => {
 window.onload = () => {
   const startBtn = document.getElementsByClassName("start-btn")[0];
   const now = new Date();
-  const targetDate = new Date(2025, 5, 8, 0, 0, 0);
+  const targetDate = new Date(2025, 5, 12, 0, 0, 0);
   const countdownDiv = document.getElementById("countdown");
 
   if (now >= targetDate) {
