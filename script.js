@@ -279,7 +279,7 @@ function checkAnswer(index, btn) {
     btn.classList.add("incorrect");
     statusDisplay.innerHTML =
       "Que pena... você errou! Fim de jogo.<br>Entre em contato com o seu admirador<br>" +
-      "secreto para resgastar seu prêmio! Ou jogue novamente!";
+      " secreto para resgastar seu prêmio! Ou jogue novamente!";
     document.querySelector(".buttons").style.display = "none";
     resetBtn.style.display = "inline-block";
   }
