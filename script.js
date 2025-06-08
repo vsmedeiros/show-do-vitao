@@ -366,7 +366,7 @@ resetBtn.onclick = () => {
 window.onload = () => {
   const startBtn = document.getElementsByClassName("start-btn")[0];
   const now = new Date();
-  const targetDate = new Date(2025, 5, 8, 0, 0, 0);
+  const targetDate = new Date(2025, 5, 12, 0, 0, 0);
   const countdownDiv = document.getElementById("countdown");
 
   if (now >= targetDate) {
