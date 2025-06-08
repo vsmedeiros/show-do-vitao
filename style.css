@@ -190,7 +190,7 @@ h3 {
 
 @media screen and (max-width: 768px) {
     #image-person {
-        width: 100%;
+        width: 90vw;
         height: 30vh;
         object-position: center 20%;
         object-fit: cover;
