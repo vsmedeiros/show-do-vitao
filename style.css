@@ -35,7 +35,10 @@ h3 {
 
 /* Fundo metálico para a área da pergunta */
 #question-text {
-    font-size: 20px;
+    font-size: 16px;
+    max-width: 300px;
+    white-space: pre-wrap;
+    word-break: break-word;
     margin: 20px 0;
     padding: 10px;
     border-radius: 8px;
@@ -57,7 +60,7 @@ h3 {
     border-radius: 8px;
     cursor: pointer;
     font-weight: bold;
-    font-size: 18px;
+    font-size: 14px;
     border: 2px solid #fff;
     color: white;
 
@@ -209,6 +212,7 @@ h3 {
     }
 
     #question-text {
+        
         font-size: 14px;
         padding: 8px;
     }

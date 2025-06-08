@@ -1,134 +1,53 @@
 const questions = [
-  
   {
-    text: "Qual é a capital da França?",
-    options: ["Paris", "Berlim", "Londres", "Roma"],
+    text: "Maior número primo conhecido?",
+    options: ["2^77.232.917−1", "10^100", "2^61−1", "3^45−1"],
     answer: 0,
   },
   {
-    text: "O que é um triângulo equilátero?",
-    options: [
-      "Todos os lados diferentes",
-      "Dois lados iguais",
-      "Todos os lados iguais",
-      "Sem lados iguais",
-    ],
-    answer: 2,
-  },
-  {
-    text: "Quantas cores tem o arco-íris?",
-    options: ["6", "7", "8", "9"],
+    text: "Raiz quadrada de 625?",
+    options: ["20", "25", "30", "15"],
     answer: 1,
   },
   {
-    text: "Em que estado brasileiro fica o Cristo Redentor?",
-    options: ["São Paulo", "Minas Gerais", "Rio de Janeiro", "Bahia"],
-    answer: 2,
+    text: "Ano da queda de Constantinopla?",
+    options: ["1453", "1492", "1415", "1500"],
+    answer: 0,
   },
   {
-    text: "O que usamos para respirar?",
-    options: ["Boca", "Estômago", "Pulmões", "Coração"],
-    answer: 2,
-  },
-  {
-    text: "Qual é a moeda dos EUA?",
-    options: ["Euro", "Dólar", "Libra", "Peso"],
+    text: "Quem inventou o cálculo?",
+    options: ["Newton", "Leibniz", "Galileu", "Descartes"],
     answer: 1,
   },
   {
-    text: "Quem é o autor de 'O Pequeno Príncipe'?",
-    options: [
-      "J.K. Rowling",
-      "Antoine de Saint-Exupéry",
-      "George Orwell",
-      "Paulo Coelho",
-    ],
+    text: "Elemento de número atômico 92?",
+    options: ["Urânio", "Tório", "Plutônio", "Cúrio"],
+    answer: 0,
+  },
+  {
+    text: "Capital da Mongólia?",
+    options: ["Astana", "Ulaanbaatar", "Tashkent", "Bishkek"],
     answer: 1,
   },
   {
-    text: "Qual é a fórmula da água?",
-    options: ["H2", "O2", "CO2", "H2O"],
-    answer: 3,
-  },
-  {
-    text: "Quantos lados tem um hexágono?",
-    options: ["4", "5", "6", "7"],
+    text: "Língua mais falada no mundo?",
+    options: ["Inglês", "Hindi", "Mandarim", "Espanhol"],
     answer: 2,
   },
   {
-    text: "Qual o nome do satélite natural da Terra?",
-    options: ["Sol", "Lua", "Marte", "Estrela"],
-    answer: 1,
-  },
-  {
-    text: "O que é fotossíntese?",
-    options: [
-      "Processo de digestão",
-      "Processo de respiração",
-      "Processo das plantas produzirem energia",
-      "Evaporação da água",
-    ],
+    text: "Maior deserto do mundo?",
+    options: ["Saara", "Atacama", "Antártida", "Gobi"],
     answer: 2,
   },
   {
-    text: "Qual desses é um mamífero?",
-    options: ["Tubarão", "Jacaré", "Golfinho", "Galinha"],
-    answer: 2,
-  },
-  {
-    text: "Qual é a fórmula da energia em termos de massa e velocidade da luz?",
-    options: ["E = mc²", "F = ma", "V = IR", "P = W/t"],
+    text: "Criador de '1984'?",
+    options: ["Orwell", "Huxley", "Kafka", "Bradbury"],
     answer: 0,
   },
   {
-    text: "Quem formulou as leis do movimento e da gravidade?",
-    options: [
-      "Albert Einstein",
-      "Isaac Newton",
-      "Galileu Galilei",
-      "Nikola Tesla",
-    ],
+    text: "Planeta com maior número de luas?",
+    options: ["Saturno", "Júpiter", "Urano", "Netuno"],
     answer: 1,
-  },
-  {
-    text: "Qual é o elemento químico com número atômico 26?",
-    options: ["Ferro", "Cobre", "Ouro", "Prata"],
-    answer: 0,
-  },
-  {
-    text: "Qual foi a principal causa da Primeira Guerra Mundial?",
-    options: [
-      "Assassinato do Arquiduque Franz Ferdinand",
-      "Queda do Império Romano",
-      "Revolução Francesa",
-      "A crise do petróleo",
-    ],
-    answer: 0,
-  },
-  {
-    text: "Qual é a capital do Cazaquistão?",
-    options: ["Nur-Sultan", "Astana", "Almaty", "Bishkek"],
-    answer: 0,
-  },
-  {
-    text: "Qual é o nome do processo de divisão celular que resulta em quatro células-filhas haploides?",
-    options: ["Mitose", "Meiose", "Fissão binária", "Geminacao"],
-    answer: 1,
-  },
-  {
-    text: "Quem escreveu a obra 'O Príncipe', um tratado sobre política?",
-    options: ["Maquiavel", "Sócrates", "Platão", "Aristóteles"],
-    answer: 0,
-  },
-  {
-    text: "Em computação, o que significa a sigla 'HTTP'?",
-    options: [
-      "HyperText Transfer Protocol",
-      "HyperText Transmission Program",
-      "High Transfer Text Protocol",
-      "Hyper Terminal Transfer Process",
-    ],
-    answer: 0,
   },
   {
     text: "Qual a velocidade da luz no vácuo, aproximadamente?",
@@ -204,6 +123,56 @@ const questions = [
     text: "Primeiro prato que ele fez para ela?",
     options: ["Lasanha", "Estrogonofe", "Fricassê", "Risoto"],
     answer: 2,
+  },
+  {
+    text: "Quantos ossos ele já quebrou?",
+    options: ["0", "1", "2", "3"],
+    answer: 0,
+  },
+  {
+    text: "Cor do olho dele?",
+    options: ["Verde", "Azul", "Castanho", "Mel"],
+    answer: 2,
+  },
+  {
+    text: "Qual prato eles fizeram juntos uma vez e ela sempre comenta?",
+    options: ["Feijoada", "Pizza", "Macarronada", "Panqueca"],
+    answer: 0,
+  },
+  {
+    text: "Quem sente mais calor?",
+    options: ["Ele", "Ela", "Os dois", "Depende"],
+    answer: 1,
+  },
+  {
+    text: "Quem sente mais frio nos pés?",
+    options: ["Ele", "Ela", "Empate", "Nenhum"],
+    answer: 1,
+  },
+  {
+    text: "Encontro que deu 'errado'?",
+    options: ["Cinemark", "Outback", "Show", "Café"],
+    answer: 1,
+  },
+  {
+    text: "Quem puxa a coberta e deixa o outro com frio?",
+    options: ["Ele", "Ela", "Nenhum", "Os dois"],
+    answer: 0,
+  },
+  {
+    text: "Quem é mais estudioso?",
+    options: ["Ele", "Ela", "Empate", "Nenhum dos dois"],
+    answer: 1,
+  },
+  {
+    text: "Quem já viajou mais?",
+    options: ["Ele", "Ela", "Empate", "Não se sabe"],
+    answer: 1,
+  },
+  {
+    text: "Qual filme viram juntos com a família no cinema?",
+    options: ["A Órfã 2", "Vingadores", "Barbie", "Oppenheimer"],
+    answer: 0,
   },
 ];
 
@@ -378,7 +347,7 @@ resetBtn.onclick = () => {
 window.onload = () => {
   const startBtn = document.getElementsByClassName("start-btn")[0];
   const now = new Date();
-  const targetDate = new Date(2025, 5, 8, 0, 0, 0);
+  const targetDate = new Date(2025, 5, 12, 0, 0, 0);
   const countdownDiv = document.getElementById("countdown");
 
   if (now >= targetDate) {
