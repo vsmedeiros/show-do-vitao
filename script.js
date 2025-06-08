@@ -162,7 +162,6 @@ document.getElementsByClassName("start-btn")[0].onclick = () => {
   playBtn.style.display = "none";
   pauseBtn.style.display = "inline-block";
   loadQuestion(); // só carrega as perguntas após clique
-  document.getElementById("start-btn").style.display = "none";
 };
 
 playBtn.onclick = () => {
