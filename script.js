@@ -234,7 +234,7 @@ function loadQuestion() {
       "Parabéns! Você ganhou R$ " +
       maxPrize +
       "!" +
-      "<br> Entre em contato com o seu admirador <br> secreto para resgastar seu prêmio!";
+      "<br> Entre em contato com o seu admirador <br> secreto para um passeio no shopping e <br> gastar  seu prêmio!";
     optionsDiv.innerHTML = "";
     resetBtn.style.display = "inline-block";
     document.querySelector(".buttons").style.display = "none";
@@ -279,7 +279,7 @@ function checkAnswer(index, btn) {
     btn.classList.add("incorrect");
     statusDisplay.innerHTML =
       "Que pena... você errou! Fim de jogo.<br>Entre em contato com o seu admirador<br>" +
-      "secreto para um passeio no shopping e <br> gastar  seu prêmio! Ou jogue novamente!";
+      "secreto para resgastar seu prêmio! Ou jogue novamente!";
     document.querySelector(".buttons").style.display = "none";
     resetBtn.style.display = "inline-block";
   }
@@ -347,7 +347,7 @@ resetBtn.onclick = () => {
 window.onload = () => {
   const startBtn = document.getElementsByClassName("start-btn")[0];
   const now = new Date();
-  const targetDate = new Date(2025, 5, 12, 0, 0, 0);
+  const targetDate = new Date(2025, 5, 8, 0, 0, 0);
   const countdownDiv = document.getElementById("countdown");
 
   if (now >= targetDate) {
