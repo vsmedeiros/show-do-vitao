@@ -1,104 +1,5 @@
 const questions = [
-  {
-    text: "Qual é a capital do Brasil?",
-    options: ["Rio de Janeiro", "Brasília", "São Paulo", "Salvador"],
-    answer: 1,
-  },
-  {
-    text: "Quem escreveu 'Dom Casmurro'?",
-    options: [
-      "Machado de Assis",
-      "José de Alencar",
-      "Clarice Lispector",
-      "Carlos Drummond",
-    ],
-    answer: 0,
-  },
-  {
-    text: "Quanto é 9 x 8?",
-    options: ["72", "81", "64", "88"],
-    answer: 0,
-  },
-  {
-    text: "Em que continente fica a Austrália?",
-    options: ["Ásia", "América", "Europa", "Oceania"],
-    answer: 3,
-  },
-  {
-    text: "Qual é o maior planeta do sistema solar?",
-    options: ["Terra", "Júpiter", "Saturno", "Marte"],
-    answer: 1,
-  },
-  {
-    text: "Quem pintou a Mona Lisa?",
-    options: ["Van Gogh", "Pablo Picasso", "Leonardo da Vinci", "Michelangelo"],
-    answer: 2,
-  },
-  {
-    text: "Qual o símbolo químico da água?",
-    options: ["H2O", "O2", "CO2", "NaCl"],
-    answer: 0,
-  },
-  {
-    text: "Em que país se fala português?",
-    options: ["França", "Brasil", "Alemanha", "Itália"],
-    answer: 1,
-  },
-  {
-    text: "Qual é o menor número primo?",
-    options: ["1", "2", "3", "5"],
-    answer: 1,
-  },
-  {
-    text: "Qual animal é conhecido como 'rei da selva'?",
-    options: ["Tigre", "Leão", "Elefante", "Pantera"],
-    answer: 1,
-  },
-  {
-    text: "Que instrumento mede a temperatura?",
-    options: ["Barômetro", "Termômetro", "Anemômetro", "Altímetro"],
-    answer: 1,
-  },
-  {
-    text: "Qual é a fórmula da área do triângulo?",
-    options: ["b × h", "b × h / 2", "πr²", "2 × (b + h)"],
-    answer: 1,
-  },
-  {
-    text: "Qual planeta é conhecido como planeta vermelho?",
-    options: ["Vênus", "Júpiter", "Marte", "Saturno"],
-    answer: 2,
-  },
-  {
-    text: "Qual o idioma falado no Egito?",
-    options: ["Francês", "Inglês", "Árabe", "Turco"],
-    answer: 2,
-  },
-  {
-    text: "Quantos continentes existem?",
-    options: ["5", "6", "7", "8"],
-    answer: 2,
-  },
-  {
-    text: "Qual o resultado de 2³?",
-    options: ["6", "8", "9", "12"],
-    answer: 1,
-  },
-  {
-    text: "Quem descobriu o Brasil?",
-    options: [
-      "Pedro Álvares Cabral",
-      "Cristóvão Colombo",
-      "Dom Pedro I",
-      "Tiradentes",
-    ],
-    answer: 0,
-  },
-  {
-    text: "Quantos segundos há em um minuto?",
-    options: ["60", "100", "30", "90"],
-    answer: 0,
-  },
+  
   {
     text: "Qual é a capital da França?",
     options: ["Paris", "Berlim", "Londres", "Roma"],
@@ -174,7 +75,7 @@ const questions = [
     options: ["Tubarão", "Jacaré", "Golfinho", "Galinha"],
     answer: 2,
   },
-   {
+  {
     text: "Qual é a fórmula da energia em termos de massa e velocidade da luz?",
     options: ["E = mc²", "F = ma", "V = IR", "P = W/t"],
     answer: 0,
@@ -185,7 +86,7 @@ const questions = [
       "Albert Einstein",
       "Isaac Newton",
       "Galileu Galilei",
-      "Nikola Tesla"
+      "Nikola Tesla",
     ],
     answer: 1,
   },
@@ -200,7 +101,7 @@ const questions = [
       "Assassinato do Arquiduque Franz Ferdinand",
       "Queda do Império Romano",
       "Revolução Francesa",
-      "A crise do petróleo"
+      "A crise do petróleo",
     ],
     answer: 0,
   },
@@ -216,12 +117,7 @@ const questions = [
   },
   {
     text: "Quem escreveu a obra 'O Príncipe', um tratado sobre política?",
-    options: [
-      "Maquiavel",
-      "Sócrates",
-      "Platão",
-      "Aristóteles"
-    ],
+    options: ["Maquiavel", "Sócrates", "Platão", "Aristóteles"],
     answer: 0,
   },
   {
@@ -230,19 +126,84 @@ const questions = [
       "HyperText Transfer Protocol",
       "HyperText Transmission Program",
       "High Transfer Text Protocol",
-      "Hyper Terminal Transfer Process"
+      "Hyper Terminal Transfer Process",
     ],
     answer: 0,
   },
   {
     text: "Qual a velocidade da luz no vácuo, aproximadamente?",
+    options: ["300.000 km/s", "150.000 km/s", "450.000 km/s", "100.000 km/s"],
+    answer: 0,
+  },
+  {
+    text: "Qual comida indispensável para ela?",
+    options: ["Pizza", "Pipoca", "Sushi", "Macarrão"],
+    answer: 1,
+  },
+  {
+    text: "Qual superpoder ele escolheria?",
+    options: ["Invisibilidade", "Força", "Voar", "Teletransporte"],
+    answer: 2,
+  },
+  {
+    text: "Qual viagem ela sonha em fazer?",
+    options: ["Paris", "Lençóis Maranhenses", "Gramado", "Fernando de Noronha"],
+    answer: 1,
+  },
+  {
+    text: "Onde eles se viram pela primeira vez?",
+    options: ["Chácara", "Escola", "Shopping", "Praia"],
+    answer: 0,
+  },
+  {
+    text: "Quem mandou a primeira mensagem?",
+    options: ["Ele", "Ela", "Ao mesmo tempo", "Nenhum dos dois"],
+    answer: 1,
+  },
+  {
+    text: "Onde foi o primeiro encontro?",
+    options: ["Cinema", "Bar", "Parque", "Praia"],
+    answer: 1,
+  },
+  {
+    text: "Sobremesa da viagem dos dois sozinhos?",
     options: [
-      "300.000 km/s",
-      "150.000 km/s",
-      "450.000 km/s",
-      "100.000 km/s"
+      "Brigadeiro",
+      "Pudim",
+      "Sorvete de queijo com goiabada",
+      "Torta de limão",
+    ],
+    answer: 2,
+  },
+  {
+    text: "Qual suco ele prefere?",
+    options: ["Laranja", "Uva", "Maracujá", "Manga"],
+    answer: 2,
+  },
+  {
+    text: "Achocolatado?",
+    options: ["Nescau", "Toddy", "Chocomilk", "Toddyinho"],
+    answer: 1,
+  },
+  {
+    text: "Quem é melhor no pebolim?",
+    options: ["Ela", "Ele", "Empate", "Nunca jogaram"],
+    answer: 1,
+  },
+  {
+    text: "Livro que leram 'juntos'?",
+    options: [
+      "A paciente Silenciosa",
+      "1984",
+      "É assim que acaba",
+      "O Pequeno Príncipe",
     ],
     answer: 0,
+  },
+  {
+    text: "Primeiro prato que ele fez para ela?",
+    options: ["Lasanha", "Estrogonofe", "Fricassê", "Risoto"],
+    answer: 2,
   },
 ];
 
@@ -417,7 +378,7 @@ resetBtn.onclick = () => {
 window.onload = () => {
   const startBtn = document.getElementsByClassName("start-btn")[0];
   const now = new Date();
-  const targetDate = new Date(2025, 5, 12, 0, 0, 0);
+  const targetDate = new Date(2025, 5, 8, 0, 0, 0);
   const countdownDiv = document.getElementById("countdown");
 
   if (now >= targetDate) {
