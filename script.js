@@ -343,3 +343,34 @@ resetBtn.onclick = () => {
   shuffleArray(questions);
   loadQuestion();
 };
+
+window.onload = () => {
+  const startBtn = document.getElementsByClassName("start-btn")[0];
+  const now = new Date();
+  const targetDate = new Date(2025, 5, 12, 0, 0, 0);
+  const countdownDiv = document.getElementById("countdown");
+
+  if (now >= targetDate) {
+    startBtn.style.display = "inline-block";
+    countdownDiv.style.display = "none";
+  } else {
+    countdownDiv.style.display = "inline-block";
+    countdownDiv.style.color = "#fff";
+    countdownDiv.style.fontSize = "16px";
+
+    function updateCountdown() {
+      const now = new Date();
+      const diff = targetDate - now;
+      const days = Math.max(0, Math.floor(diff / (1000 * 60 * 60 * 24)));
+      const hours = Math.max(0, Math.floor((diff / (1000 * 60 * 60)) % 24));
+      const minutes = Math.max(0, Math.floor((diff / (1000 * 60)) % 60));
+      const seconds = Math.max(0, Math.floor((diff / 1000) % 60));
+
+      countdownDiv.innerHTML = `O jogo será liberado em: ${days}d ${hours}h ${minutes}m ${seconds}s. <br>
+       Quando relógio zerar, recarregue a página!`;
+    }
+
+    updateCountdown();
+    setInterval(updateCountdown, 1000);
+  }
+};
