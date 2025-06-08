@@ -5,149 +5,174 @@ const questions = [
     answer: 1,
   },
   {
-    text: "Qual é a capital do Brasil?",
-    options: ["Rio de Janeiro", "Brasília", "São Paulo", "Salvador"],
+    text: "Quem escreveu 'Dom Casmurro'?",
+    options: [
+      "Machado de Assis",
+      "José de Alencar",
+      "Clarice Lispector",
+      "Carlos Drummond",
+    ],
+    answer: 0,
+  },
+  {
+    text: "Quanto é 9 x 8?",
+    options: ["72", "81", "64", "88"],
+    answer: 0,
+  },
+  {
+    text: "Em que continente fica a Austrália?",
+    options: ["Ásia", "América", "Europa", "Oceania"],
+    answer: 3,
+  },
+  {
+    text: "Qual é o maior planeta do sistema solar?",
+    options: ["Terra", "Júpiter", "Saturno", "Marte"],
     answer: 1,
   },
   {
-    text: "Qual é a capital do Brasil?",
-    options: ["Rio de Janeiro", "Brasília", "São Paulo", "Salvador"],
+    text: "Quem pintou a Mona Lisa?",
+    options: ["Van Gogh", "Pablo Picasso", "Leonardo da Vinci", "Michelangelo"],
+    answer: 2,
+  },
+  {
+    text: "Qual o símbolo químico da água?",
+    options: ["H2O", "O2", "CO2", "NaCl"],
+    answer: 0,
+  },
+  {
+    text: "Em que país se fala português?",
+    options: ["França", "Brasil", "Alemanha", "Itália"],
     answer: 1,
   },
   {
-    text: "Qual é a capital do Brasil?",
-    options: ["Rio de Janeiro", "Brasília", "São Paulo", "Salvador"],
+    text: "Qual é o menor número primo?",
+    options: ["1", "2", "3", "5"],
     answer: 1,
   },
   {
-    text: "Qual é a capital do Brasil?",
-    options: ["Rio de Janeiro", "Brasília", "São Paulo", "Salvador"],
+    text: "Qual animal é conhecido como 'rei da selva'?",
+    options: ["Tigre", "Leão", "Elefante", "Pantera"],
     answer: 1,
   },
   {
-    text: "Qual é a capital do Brasil?",
-    options: ["Rio de Janeiro", "Brasília", "São Paulo", "Salvador"],
+    text: "Que instrumento mede a temperatura?",
+    options: ["Barômetro", "Termômetro", "Anemômetro", "Altímetro"],
     answer: 1,
   },
   {
-    text: "Qual é a capital do Brasil?",
-    options: ["Rio de Janeiro", "Brasília", "São Paulo", "Salvador"],
+    text: "Qual é a fórmula da área do triângulo?",
+    options: ["b × h", "b × h / 2", "πr²", "2 × (b + h)"],
     answer: 1,
   },
   {
-    text: "Qual é a capital do Brasil?",
-    options: ["Rio de Janeiro", "Brasília", "São Paulo", "Salvador"],
+    text: "Qual planeta é conhecido como planeta vermelho?",
+    options: ["Vênus", "Júpiter", "Marte", "Saturno"],
+    answer: 2,
+  },
+  {
+    text: "Qual o idioma falado no Egito?",
+    options: ["Francês", "Inglês", "Árabe", "Turco"],
+    answer: 2,
+  },
+  {
+    text: "Quantos continentes existem?",
+    options: ["5", "6", "7", "8"],
+    answer: 2,
+  },
+  {
+    text: "Qual o resultado de 2³?",
+    options: ["6", "8", "9", "12"],
     answer: 1,
   },
   {
-    text: "Qual é a capital do Brasil?",
-    options: ["Rio de Janeiro", "Brasília", "São Paulo", "Salvador"],
+    text: "Quem descobriu o Brasil?",
+    options: [
+      "Pedro Álvares Cabral",
+      "Cristóvão Colombo",
+      "Dom Pedro I",
+      "Tiradentes",
+    ],
+    answer: 0,
+  },
+  {
+    text: "Quantos segundos há em um minuto?",
+    options: ["60", "100", "30", "90"],
+    answer: 0,
+  },
+  {
+    text: "Qual é a capital da França?",
+    options: ["Paris", "Berlim", "Londres", "Roma"],
+    answer: 0,
+  },
+  {
+    text: "O que é um triângulo equilátero?",
+    options: [
+      "Todos os lados diferentes",
+      "Dois lados iguais",
+      "Todos os lados iguais",
+      "Sem lados iguais",
+    ],
+    answer: 2,
+  },
+  {
+    text: "Quantas cores tem o arco-íris?",
+    options: ["6", "7", "8", "9"],
     answer: 1,
   },
   {
-    text: "Qual é a capital do Brasil?",
-    options: ["Rio de Janeiro", "Brasília", "São Paulo", "Salvador"],
+    text: "Em que estado brasileiro fica o Cristo Redentor?",
+    options: ["São Paulo", "Minas Gerais", "Rio de Janeiro", "Bahia"],
+    answer: 2,
+  },
+  {
+    text: "O que usamos para respirar?",
+    options: ["Boca", "Estômago", "Pulmões", "Coração"],
+    answer: 2,
+  },
+  {
+    text: "Qual é a moeda dos EUA?",
+    options: ["Euro", "Dólar", "Libra", "Peso"],
     answer: 1,
   },
   {
-    text: "Qual é a capital do Brasil?",
-    options: ["Rio de Janeiro", "Brasília", "São Paulo", "Salvador"],
+    text: "Quem é o autor de 'O Pequeno Príncipe'?",
+    options: [
+      "J.K. Rowling",
+      "Antoine de Saint-Exupéry",
+      "George Orwell",
+      "Paulo Coelho",
+    ],
     answer: 1,
   },
   {
-    text: "Qual é a capital do Brasil?",
-    options: ["Rio de Janeiro", "Brasília", "São Paulo", "Salvador"],
+    text: "Qual é a fórmula da água?",
+    options: ["H2", "O2", "CO2", "H2O"],
+    answer: 3,
+  },
+  {
+    text: "Quantos lados tem um hexágono?",
+    options: ["4", "5", "6", "7"],
+    answer: 2,
+  },
+  {
+    text: "Qual o nome do satélite natural da Terra?",
+    options: ["Sol", "Lua", "Marte", "Estrela"],
     answer: 1,
   },
   {
-    text: "Qual é a capital do Brasil?",
-    options: ["Rio de Janeiro", "Brasília", "São Paulo", "Salvador"],
-    answer: 1,
+    text: "O que é fotossíntese?",
+    options: [
+      "Processo de digestão",
+      "Processo de respiração",
+      "Processo das plantas produzirem energia",
+      "Evaporação da água",
+    ],
+    answer: 2,
   },
   {
-    text: "Qual é a capital do Brasil?",
-    options: ["Rio de Janeiro", "Brasília", "São Paulo", "Salvador"],
-    answer: 1,
-  },
-  {
-    text: "Qual é a capital do Brasil?",
-    options: ["Rio de Janeiro", "Brasília", "São Paulo", "Salvador"],
-    answer: 1,
-  },
-  {
-    text: "Qual é a capital do Brasil?",
-    options: ["Rio de Janeiro", "Brasília", "São Paulo", "Salvador"],
-    answer: 1,
-  },
-  {
-    text: "Qual é a capital do Brasil?",
-    options: ["Rio de Janeiro", "Brasília", "São Paulo", "Salvador"],
-    answer: 1,
-  },
-  {
-    text: "Qual é a capital do Brasil?",
-    options: ["Rio de Janeiro", "Brasília", "São Paulo", "Salvador"],
-    answer: 1,
-  },
-  {
-    text: "Qual é a capital do Brasil?",
-    options: ["Rio de Janeiro", "Brasília", "São Paulo", "Salvador"],
-    answer: 1,
-  },
-  {
-    text: "Qual é a capital do Brasil?",
-    options: ["Rio de Janeiro", "Brasília", "São Paulo", "Salvador"],
-    answer: 1,
-  },
-  {
-    text: "Qual é a capital do Brasil?",
-    options: ["Rio de Janeiro", "Brasília", "São Paulo", "Salvador"],
-    answer: 1,
-  },
-  {
-    text: "Qual é a capital do Brasil?",
-    options: ["Rio de Janeiro", "Brasília", "São Paulo", "Salvador"],
-    answer: 1,
-  },
-  {
-    text: "Qual é a capital do Brasil?",
-    options: ["Rio de Janeiro", "Brasília", "São Paulo", "Salvador"],
-    answer: 1,
-  },
-  {
-    text: "Qual é a capital do Brasil?",
-    options: ["Rio de Janeiro", "Brasília", "São Paulo", "Salvador"],
-    answer: 1,
-  },
-  {
-    text: "Qual é a capital do Brasil?",
-    options: ["Rio de Janeiro", "Brasília", "São Paulo", "Salvador"],
-    answer: 1,
-  },
-  {
-    text: "Qual é a capital do Brasil?",
-    options: ["Rio de Janeiro", "Brasília", "São Paulo", "Salvador"],
-    answer: 1,
-  },
-  {
-    text: "Qual é a capital do Brasil?",
-    options: ["Rio de Janeiro", "Brasília", "São Paulo", "Salvador"],
-    answer: 1,
-  },
-  {
-    text: "Qual é a capital do Brasil?",
-    options: ["Rio de Janeiro", "Brasília", "São Paulo", "Salvador"],
-    answer: 1,
-  },
-  {
-    text: "Qual é a capital do Brasil?",
-    options: ["Rio de Janeiro", "Brasília", "São Paulo", "Salvador"],
-    answer: 1,
-  },
-  {
-    text: "Qual é a capital do Brasil?",
-    options: ["Rio de Janeiro", "Brasília", "São Paulo", "Salvador"],
-    answer: 1,
+    text: "Qual desses é um mamífero?",
+    options: ["Tubarão", "Jacaré", "Golfinho", "Galinha"],
+    answer: 2,
   },
 ];
 
@@ -161,6 +186,7 @@ document.getElementsByClassName("start-btn")[0].onclick = () => {
   audio.play();
   playBtn.style.display = "none";
   pauseBtn.style.display = "inline-block";
+  shuffleArray(questions);
   loadQuestion(); // só carrega as perguntas após clique
 };
 
@@ -191,17 +217,24 @@ const statusDisplay = document.getElementById("status");
 const skipBtn = document.getElementById("skip-btn");
 const hintBtn = document.getElementById("hint-btn");
 
+function shuffleArray(array) {
+  for (let i = array.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [array[i], array[j]] = [array[j], array[i]];
+  }
+}
+
 function loadQuestion() {
   optionsDiv.style.display = "block";
   buttons.style.display = "block";
   prizeDisplay.style.display = "block";
   questionNumber.style.display = "block";
-  if (currentQuestion >= maxQuestions + 1) {
-    questionText.textContent =
+  if (currentQuestion >= 21) {
+    questionText.innerHTML =
       "Parabéns! Você ganhou R$ " +
       maxPrize +
       "!" +
-      " Entre em contato com o seu admirador secreto para um passeio no shopping e gastar seu prêmio!";
+      "<br> Entre em contato com o seu admirador <br> secreto para resgastar seu prêmio!";
     optionsDiv.innerHTML = "";
     resetBtn.style.display = "inline-block";
     document.querySelector(".buttons").style.display = "none";
@@ -307,6 +340,6 @@ resetBtn.onclick = () => {
 
   document.querySelector(".buttons").style.display = "block";
   resetBtn.style.display = "none";
-
+  shuffleArray(questions);
   loadQuestion();
 };
