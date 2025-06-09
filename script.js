@@ -334,6 +334,7 @@ skipBtn.onclick = () => {
     skipBtn.textContent = "Pulo usado";
     skipBtn.style.color = "#fff";
     skipBtn.style.backgroundColor = "#888";
+    currentQuestion++;
     loadQuestion();
   }
 };
